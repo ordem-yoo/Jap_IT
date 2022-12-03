@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    td {
+      text-align: center;
+    }
+    .t-left{
+      text-align: left;
+    }
+    /* 클래스 */
+    .t-bold{
+      font-weight: bold;
+    }
+    /* id */
+    #a{
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>수험번호</th>
+        <th>성명</th>
+        <th>생년월일</th>
+        <th>성별</th>
+        <th colspan="4">출신고교 (반 또는 졸업년도)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>12345678</td>
+        <td>아무개</td>
+        <!-- align="center" 가운데 정렬 -->
+        <td>19년 11월 15일</td>
+        <td>무성</td>
+        <td colspan="4">고등학교(0)</td>
+      </tr>
+      <tr>
+        <th rowspan="2">구분</th>
+        <td rowspan="2">한국사영역</td>
+        <td rowspan="2">국어영역</td>
+        <td>수학영역</td>
+        <td rowspan="2">영어영역</td>
+        <td colspan="2">사회탐구영역</td>
+        <td>제 2외국어<br>/한문영역</td>
+      </tr>
+      <tr>
+        <td>나형</td>
+        <td>생활과 윤리</td>
+        <td>사회 문화</td>
+        <td>아랍어</td>
+      </tr>
+      <tr>
+        <th id="a">표준점수</th>
+        <td rowspan="2"></td>
+        <td>131</td>
+        <td>137</td>
+        <td rowspan="2"></td>
+        <td class="t-bold">53</td>
+        <td>64</td>
+        <td>69</td>
+      </tr>
+      <tr>
+        <th>백분위</th>
+        <td>93</td>
+        <td>95</td>
+        <td>75</td>
+        <td>93</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <th>등급</th>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  </p>
+</body>
+
+</html>
