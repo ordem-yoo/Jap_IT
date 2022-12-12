@@ -14,11 +14,17 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    span.s-9 {
+        font-size: 9pt;
+    }
 
-<body>
-    <div class="container">
+    span.s-10 {
+        font-size: 10pt;
+    }
+</style>
 
-    </div>
+<body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">PyBo</a>
@@ -54,8 +60,269 @@
                 <!-- <ac class="nav-link" href="#"></ac> -->
             </div>
     </nav>
+    <div class="container  mt-3">
+        <div class="row">
+            <!-- side-menu -->
+            <div class="col-md-2">
+                <table class="table table-hover table-bordered">
+                    <tr class="table-hover bg-secondary">
+                        <td>
+                            <span class="text-white">
+                                질문과답변
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="text-secondary">
+                                자유게시판
+                            </span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="text-secondary">
+                                버그및건의
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+                <li>
+                    <a href="#">
+                        <span class="s-10">
+                            점프 투 장고
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="s-10">
+                            점프 투 플라스크
+                        </span> </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="s-10">
+                            점프 투 자바
+                        </span> </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="s-10">
+                            파이썬 라이브러리
+                        </span> </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="s-10">
+                            점프 투 스프링 부트
+                        </span> </a>
+                </li>
+
+            </div>
+            <!-- // side-menu -->
+
+            <!-- main -->
+            <div class="col-md-10 bg-white border-top border-dark">
+                <p class="h5 mt-3">질문과 답변</p>
+                <hr class="mt-0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <button class="btn  btn-secondary active">
+                                <input type="radio" name="options" id="option1" checked>
+                                <i class="fa-solid fa-list"></i>
+                            </button>
+                            <button class="btn  btn-secondary">
+                                <input type="radio" name="options" id="option2">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </button>
+                            <button class="btn  btn-secondary" data-toggle="buttons">
+                                <input type="radio" name="options" id="option2">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ml-auto col-md-6">
+                        <form action="abc.html" method="get">
+                            <div class="input-group">
+                                <input type="text" name="search" class="form-control">
+                                <div class="imput-group-append">
+                                    <button class="btn btn-secondary">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <table class="table table-hover mt-3">
+                    <thead>
+                        <tr class="bg-light text-center">
+                            <th>추천</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>조회</th>
+                            <th>날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">
+                                <kbd class="bg-warning text-dark">
+                                    <strong>
+                                        3
+                                    </strong>
+                                </kbd>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-danger text-center">
+                                    <i class="fa-solid fa-volume-high"></i>공지
+                                </span>
+                                파이보에 소스코드 첨부하는 방법
+                            </td>
+                            <td class="text-center">
+                                <img src="profile.jpg" width="20px;" class="border">
+                                <span class="text-muted" style="font-size: s-10;">
+
+                                    운영자
+                                </span>
+                            </td>
+                            <td class="text-center">
+                                <span class="text-center" span class="s-10">
+                                    3010
+                                </span>
+                            </td>
+                            <td class="text-center">
+                                <span class="s-10">
+                                    2022년 12월 8일 2:56 오후
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <kbd class="bg-warning text-dark">
+                                    <strong>
+                                        9
+                                    </strong>
+                                </kbd>
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-danger">
+                                    <i class="fa-solid fa-volume-high"></i>공지
+                                </span>
+                                파이보에 이미지 첨부하기 (imgur.com)
+                                <span class="text-danger ml-3 s-9">
+                                    6
+                                </span>
+                                </span>
+                            </td>
+                            <td>
+                                <img src="profile.jpg" width="20px;" class="border">
+                                <span class="text-muted" style="font-size: s-10;">
+                                    운영자
+                                </span>
+                            </td>
+                            <td>
+                                <span class="s-10">
+                                    2728
+                                </span>
+                            </td>
+                            <td>
+                                <span class="s-10">
+                                    2020년 7월 7일 2:41 오후
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <kbd class="bg-light text-secondary">
+                                    <strong>
+                                        0
+                                    </strong>
+                                </kbd>
+                            </td>
+                            <td>
+                                점프 투 장고 03.파이보 서비스 개발 127페이지 질문
+                                <span class="text-danger ml-3 s-9">
+                                    1
+                                </span>
+                            </td>
+                            <td>
+                                <img src="profile.jpg" width="20px;" class="border">
+                                <span class="text-muted" style="font-size: s-10;">
+                                    daniel4191
+                                </span>
+                            </td>
+                            <td>
+                                <span class="s-10">
+                                    9
+                                </span>
+                            </td>
+                            <td>
+                                <span class="s-10">
+                                    2020년 7월 7일 3:15 오후
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- // content -->
+
+                <!-- pagenation -->
+                <div class>
+                    <nav aria-label="...">
+                        <ul class="pagination pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <span class="page-link">이전</span>
+                            </li>
+                            <li class="page-item active aria-current"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <span class="page-link">
+                                    2
+                                    <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <li class="page-item">
+                                <span class="page-link">
+                                    3
+                                    <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <li class="page-item">
+                                <span class="page-link">
+                                    4
+                                    <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <li class="page-item">
+                                <span class="page-link">
+                                    ...
+                                    <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">46</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">다음</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- // pagenation -->
+
+                <div class="mb-3">
+                    <a href="#" class="btn btn-primary">질문과답변 등록</a>
+                </div>
+            </div>
+        </div>
+        <!-- // main -->
     </div>
 
+    </div>
+
+    </div>
 
     <!-- 3. serparate에서 가져온 첫 태그 부분을 지우고 cdnjs.com에서 jquery 검색 후 마지막에 3.6.1/jquery.min.js 가 있는 줄을 복사해서 붙여넣기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
