@@ -319,9 +319,7 @@
         </div>
         <!-- // main -->
     </div>
-
     </div>
-
     </div>
 
     <!-- 3. serparate에서 가져온 첫 태그 부분을 지우고 cdnjs.com에서 jquery 검색 후 마지막에 3.6.1/jquery.min.js 가 있는 줄을 복사해서 붙여넣기 -->
@@ -340,6 +338,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
         integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        window.onload = function () {
+
+        }
+
+        function search() {
+            let keyword = document.getElementById('keyword');
+            console.log(keyword.value);
+
+            if (keyword.value == '') {
+                alert('검색어를 입력하세요.');
+                keyword.focus();
+                return false;
+            } else {
+                document.getElementById('formSearch').submit();
+            }
+        }
+    </script>
 </body>
 
 </html>
